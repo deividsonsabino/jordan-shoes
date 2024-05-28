@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { device } from "../../../utils";
 
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 24px;
+    margin: 8px 0;
     p {
         margin: 0;
     }
@@ -21,10 +22,19 @@ export const Model = styled.p`
     font-size: 18px;
     font-weight: 700;
     line-height: 23.4px;
+
+    @media (${device.sm}) {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.8px;
+        text-align: left;
+  }
+
+
 `
 export const Brand = styled.p`
     padding-top: 12px;
-
+    color: var(--brand-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 17.41px;
