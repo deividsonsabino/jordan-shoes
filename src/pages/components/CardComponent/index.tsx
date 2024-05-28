@@ -1,4 +1,4 @@
-import { Sneaker } from "../../../interface";
+import { Sneaker } from "../../../interfaces";
 import { Card, Image, Model, Brand, Price } from "./styles";
 
 function CardComponent(props: Sneaker) {
