@@ -1,6 +1,11 @@
+import { Fragment } from "react/jsx-runtime"
+import { HeroComponent } from "./components"
+
 function HomePage() {
     return (
-        <h1>Home</h1>
+        <Fragment>
+            <HeroComponent />
+        </Fragment>
     )
 }
 
